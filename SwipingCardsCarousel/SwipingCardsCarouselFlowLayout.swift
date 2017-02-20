@@ -36,7 +36,7 @@ struct DefaultSwipingCardsCarouselStyle:SwipingCardsCarouselFlowLayoutStyle{}
 
 public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
   
-  var stylingDelegate:SwipingCardsCarouselFlowLayoutStyle?
+  public var stylingDelegate:SwipingCardsCarouselFlowLayoutStyle?
   
   override public func prepare() {
     super.prepare()
