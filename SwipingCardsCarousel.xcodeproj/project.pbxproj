@@ -11,6 +11,7 @@
 		41141E7E1E5735B900A22F0F /* SwipingCardsCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */; };
 		41141E801E5735B900A22F0F /* SwipingCardsCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */; };
+		41A60D4A1E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselTests.swift; sourceTree = "<group>"; };
 		41141E7F1E5735B900A22F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */,
 				41141E731E5735B900A22F0F /* Info.plist */,
 				41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */,
+				41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */,
 			);
 			path = SwipingCardsCarousel;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A60D4A1E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift in Sources */,
 				41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +408,7 @@
 				41141E851E5735B900A22F0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41141E861E5735B900A22F0F /* Build configuration list for PBXNativeTarget "SwipingCardsCarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +417,7 @@
 				41141E881E5735B900A22F0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
