@@ -75,6 +75,7 @@ public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
       topBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
       bottomBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
     }
+    
     let widthBounds = max((collectionView.bounds.width - stylingDelegate.itemWidth) * 0.5,0)
     sectionInset = UIEdgeInsetsMake(topBounds, widthBounds, bottomBounds, widthBounds)
   }
