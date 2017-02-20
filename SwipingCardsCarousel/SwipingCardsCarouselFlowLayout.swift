@@ -14,7 +14,7 @@ public protocol SwipingCardsCarouselFlowLayoutStyle{
   var minLineSpacing: CGFloat {get}
 }
 
-extension SwipingCardsCarouselFlowLayoutStyle{
+public extension SwipingCardsCarouselFlowLayoutStyle{
   var itemWidth:CGFloat {
     get{
       return 210
