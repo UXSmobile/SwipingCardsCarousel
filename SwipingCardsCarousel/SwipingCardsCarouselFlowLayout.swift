@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SwipingCardsCarouselFlowLayoutStyle{
+public protocol SwipingCardsCarouselFlowLayoutStyle{
   var itemWidth:CGFloat {get}
   var itemHeight: CGFloat {get}
   var minLineSpacing: CGFloat {get}
