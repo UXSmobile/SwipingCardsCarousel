@@ -1,0 +1,10 @@
+framework module SwipingCardsCarousel {
+  umbrella header "SwipingCardsCarousel.h"
+
+  export *
+  module * { export * }
+}
+
+module SwipingCardsCarousel.Swift {
+    header "SwipingCardsCarousel-Swift.h"
+}

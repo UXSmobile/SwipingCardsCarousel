@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCollectionViewCell" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="ExampleProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="278"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="278"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6i-Bf-cjJ">
+                        <rect key="frame" x="10" y="16" width="191" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8p2-7D-rbV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwp-pd-8e3">
+                        <rect key="frame" x="10" y="71" width="191" height="166"/>
+                        <string key="text">Main Description: Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-k4-PJJ">
+                        <rect key="frame" x="10" y="245" width="45.5" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="xwr-dy-JiD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profession" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icO-f3-r3e">
+                        <rect key="frame" x="10" y="36" width="191" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="aZ6-tY-QzU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Fwp-pd-8e3" firstAttribute="leading" secondItem="h6i-Bf-cjJ" secondAttribute="leading" id="1Nx-DS-3kI"/>
+                <constraint firstItem="Fwp-pd-8e3" firstAttribute="leading" secondItem="Iam-k4-PJJ" secondAttribute="leading" id="FLg-5R-TBd"/>
+                <constraint firstItem="Fwp-pd-8e3" firstAttribute="top" secondItem="icO-f3-r3e" secondAttribute="bottom" constant="15" id="LBL-T3-dS1"/>
+                <constraint firstItem="icO-f3-r3e" firstAttribute="top" secondItem="h6i-Bf-cjJ" secondAttribute="bottom" id="W7c-yK-jsu"/>
+                <constraint firstItem="h6i-Bf-cjJ" firstAttribute="trailing" secondItem="icO-f3-r3e" secondAttribute="trailing" id="Y6K-x1-VeW"/>
+                <constraint firstItem="icO-f3-r3e" firstAttribute="trailing" secondItem="Fwp-pd-8e3" secondAttribute="trailing" id="dI3-7F-Dsl"/>
+                <constraint firstItem="Iam-k4-PJJ" firstAttribute="top" secondItem="Fwp-pd-8e3" secondAttribute="bottom" constant="8" symbolic="YES" id="epc-1C-zXF"/>
+                <constraint firstItem="Iam-k4-PJJ" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="foe-24-sXF"/>
+                <constraint firstItem="h6i-Bf-cjJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="h0P-PO-iso"/>
+                <constraint firstAttribute="trailing" secondItem="h6i-Bf-cjJ" secondAttribute="trailing" constant="9" id="iHr-I2-TGb"/>
+                <constraint firstItem="h6i-Bf-cjJ" firstAttribute="leading" secondItem="icO-f3-r3e" secondAttribute="leading" id="q8K-Ix-gf0"/>
+                <constraint firstItem="h6i-Bf-cjJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="qef-Cd-79m"/>
+            </constraints>
+            <size key="customSize" width="179" height="274"/>
+            <connections>
+                <outlet property="activityLabel" destination="Iam-k4-PJJ" id="lAk-Pb-SUt"/>
+                <outlet property="mainDescriptionLabel" destination="Fwp-pd-8e3" id="5bP-mg-Ey4"/>
+                <outlet property="nameLabel" destination="h6i-Bf-cjJ" id="U1T-yi-sSG"/>
+                <outlet property="professionLabel" destination="icO-f3-r3e" id="CCL-bR-wDl"/>
+            </connections>
+            <point key="canvasLocation" x="104.5" y="166"/>
+        </collectionViewCell>
+    </objects>
+</document>
