@@ -46,7 +46,10 @@ public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
     itemSize = CGSize(width: stylingDelegate.itemWidth, height: stylingDelegate.itemHeight)
     scrollDirection = .horizontal
     minimumLineSpacing = stylingDelegate.minLineSpacing
-    sectionInset = UIEdgeInsetsMake(100.0, (UIScreen.main.bounds.width - stylingDelegate.itemWidth) * 0.5, 100, (UIScreen.main.bounds.width - stylingDelegate.itemWidth) * 0.5)
+    guard let collectionView = collectionView else {return}
+    let heightBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
+    let widthBounds = max((collectionView.bounds.width - stylingDelegate.itemWidth) * 0.5,0)
+    sectionInset = UIEdgeInsetsMake(heightBounds, widthBounds, heightBounds, widthBounds)
   }
   
   // Invalidate the Layout when the user is scrolling
