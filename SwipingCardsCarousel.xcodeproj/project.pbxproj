@@ -10,6 +10,7 @@
 		41141E791E5735B900A22F0F /* SwipingCardsCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41141E6F1E5735B900A22F0F /* SwipingCardsCarousel.framework */; };
 		41141E7E1E5735B900A22F0F /* SwipingCardsCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */; };
 		41141E801E5735B900A22F0F /* SwipingCardsCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		41141E781E5735B900A22F0F /* SwipingCardsCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipingCardsCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselTests.swift; sourceTree = "<group>"; };
 		41141E7F1E5735B900A22F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */,
 				41141E731E5735B900A22F0F /* Info.plist */,
+				41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */,
 			);
 			path = SwipingCardsCarousel;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					41141E6E1E5735B900A22F0F = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					41141E771E5735B900A22F0F = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		41141E841E5735B900A22F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxsmobile.SwipingCardsCarousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		41141E851E5735B900A22F0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		41141E871E5735B900A22F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwipingCardsCarouselTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxsmobile.SwipingCardsCarouselTests;
@@ -367,6 +376,7 @@
 		41141E881E5735B900A22F0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SwipingCardsCarouselTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxsmobile.SwipingCardsCarouselTests;
