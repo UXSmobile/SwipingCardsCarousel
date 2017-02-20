@@ -60,24 +60,25 @@ public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
     itemSize = CGSize(width: stylingDelegate.itemWidth, height: stylingDelegate.itemHeight)
     scrollDirection = .horizontal
     minimumLineSpacing = stylingDelegate.minLineSpacing
-    guard let collectionView = collectionView else {return}
-    // Calculate top and bottom section inset based on custom options
-    let topBounds:CGFloat
-    let bottomBounds:CGFloat
-    if let bottomCustomSectionInset = stylingDelegate.bottomSectionInset{
-      topBounds = max(collectionView.bounds.height - stylingDelegate.itemHeight - bottomCustomSectionInset,0)
-      bottomBounds = bottomCustomSectionInset
-    }else if let topCustomSectionInset = stylingDelegate.topSectionInset{
-      topBounds = topCustomSectionInset
-      bottomBounds = max(collectionView.bounds.height - stylingDelegate.itemHeight - topCustomSectionInset,0)
+    if let collectionView = collectionView, collectionView.frame.height < UIScreen.main.bounds.height{
+      // Calculate top and bottom section inset based on custom options
+      let topBounds:CGFloat
+      let bottomBounds:CGFloat
+      if let bottomCustomSectionInset = stylingDelegate.bottomSectionInset{
+        topBounds = max(collectionView.bounds.height - stylingDelegate.itemHeight - bottomCustomSectionInset,0)
+        bottomBounds = bottomCustomSectionInset
+      }else if let topCustomSectionInset = stylingDelegate.topSectionInset{
+        topBounds = topCustomSectionInset
+        bottomBounds = max(collectionView.bounds.height - stylingDelegate.itemHeight - topCustomSectionInset,0)
+      }
+      else{
+        topBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
+        bottomBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
+      }
+      
+      let widthBounds = max((collectionView.bounds.width - stylingDelegate.itemWidth) * 0.5,0)
+      sectionInset = UIEdgeInsetsMake(topBounds, widthBounds, bottomBounds, widthBounds)
     }
-    else{
-      topBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
-      bottomBounds = max((collectionView.bounds.height - stylingDelegate.itemHeight) * 0.5,0)
-    }
-    
-    let widthBounds = max((collectionView.bounds.width - stylingDelegate.itemWidth) * 0.5,0)
-    sectionInset = UIEdgeInsetsMake(topBounds, widthBounds, bottomBounds, widthBounds)
   }
   
   // Invalidate the Layout when the user is scrolling
