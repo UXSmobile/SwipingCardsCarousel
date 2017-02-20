@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwipingCardsCarousel.xcscheme_^#shared#^_</key>
+		<key>SwipingCardsCarousel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>41141E6E1E5735B900A22F0F</key>
+		<key>416D2CE41E5B079C00D8A570</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41141E771E5735B900A22F0F</key>
+		<key>416D2CED1E5B079C00D8A570</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -16,7 +16,7 @@
 		41141EB11E57436800A22F0F /* Cards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41141EB01E57436800A22F0F /* Cards.plist */; };
 		41A60D411E57462E0093018E /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A60D3F1E57462E0093018E /* CardCollectionViewCell.swift */; };
 		41A60D421E57462E0093018E /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A60D401E57462E0093018E /* CardCollectionViewCell.xib */; };
-		41A60D4C1E5AE68B0093018E /* SwipingCardsCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A60D4B1E5AE68B0093018E /* SwipingCardsCarousel.framework */; };
+		41A60D5F1E5B06EB0093018E /* SwipingCardsCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A60D5D1E5B06E30093018E /* SwipingCardsCarousel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		41141EB01E57436800A22F0F /* Cards.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cards.plist; sourceTree = "<group>"; };
 		41A60D3F1E57462E0093018E /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		41A60D401E57462E0093018E /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
-		41A60D4B1E5AE68B0093018E /* SwipingCardsCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipingCardsCarousel.framework; path = Carthage/Build/iOS/SwipingCardsCarousel.framework; sourceTree = "<group>"; };
+		41A60D5D1E5B06E30093018E /* SwipingCardsCarousel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipingCardsCarousel.framework; path = Carthage/Build/iOS/SwipingCardsCarousel.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A60D4C1E5AE68B0093018E /* SwipingCardsCarousel.framework in Frameworks */,
+				41A60D5F1E5B06EB0093018E /* SwipingCardsCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		41141EB21E5744C300A22F0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				41A60D4B1E5AE68B0093018E /* SwipingCardsCarousel.framework */,
+				41A60D5D1E5B06E30093018E /* SwipingCardsCarousel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -352,6 +352,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxsmobile.ExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +369,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ExampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uxsmobile.ExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

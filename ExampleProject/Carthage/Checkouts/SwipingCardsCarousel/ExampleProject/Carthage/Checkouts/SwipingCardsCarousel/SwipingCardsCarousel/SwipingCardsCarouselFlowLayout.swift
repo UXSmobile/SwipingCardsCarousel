@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SwipingCarouselFlowLayout:  UICollectionViewFlowLayout {
+public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
   
   // Mark: Constants
   private struct Constants {

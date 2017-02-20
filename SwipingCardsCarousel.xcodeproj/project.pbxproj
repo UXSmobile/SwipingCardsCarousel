@@ -7,87 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41141E791E5735B900A22F0F /* SwipingCardsCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41141E6F1E5735B900A22F0F /* SwipingCardsCarousel.framework */; };
-		41141E7E1E5735B900A22F0F /* SwipingCardsCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */; };
-		41141E801E5735B900A22F0F /* SwipingCardsCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */; };
-		41A60D4A1E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */; };
+		416D2CEF1E5B079C00D8A570 /* SwipingCardsCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416D2CE51E5B079C00D8A570 /* SwipingCardsCarousel.framework */; };
+		416D2CF41E5B079C00D8A570 /* SwipingCardsCarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D2CF31E5B079C00D8A570 /* SwipingCardsCarouselTests.swift */; };
+		416D2CF61E5B079C00D8A570 /* SwipingCardsCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 416D2CE81E5B079C00D8A570 /* SwipingCardsCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416D2D001E5B081200D8A570 /* SwipingCardsCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D2CFF1E5B081200D8A570 /* SwipingCardsCarouselCollectionViewCell.swift */; };
+		416D2D021E5B081A00D8A570 /* SwipingCardsCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D2D011E5B081A00D8A570 /* SwipingCardsCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41141E7A1E5735B900A22F0F /* PBXContainerItemProxy */ = {
+		416D2CF01E5B079C00D8A570 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 41141E661E5735B900A22F0F /* Project object */;
+			containerPortal = 416D2CDC1E5B079C00D8A570 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41141E6E1E5735B900A22F0F;
+			remoteGlobalIDString = 416D2CE41E5B079C00D8A570;
 			remoteInfo = SwipingCardsCarousel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41141E6F1E5735B900A22F0F /* SwipingCardsCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipingCardsCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipingCardsCarousel.h; sourceTree = "<group>"; };
-		41141E731E5735B900A22F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41141E781E5735B900A22F0F /* SwipingCardsCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipingCardsCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselTests.swift; sourceTree = "<group>"; };
-		41141E7F1E5735B900A22F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselFlowLayout.swift; sourceTree = "<group>"; };
-		41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		416D2CE51E5B079C00D8A570 /* SwipingCardsCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipingCardsCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		416D2CE81E5B079C00D8A570 /* SwipingCardsCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipingCardsCarousel.h; sourceTree = "<group>"; };
+		416D2CE91E5B079C00D8A570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416D2CEE1E5B079C00D8A570 /* SwipingCardsCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipingCardsCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		416D2CF31E5B079C00D8A570 /* SwipingCardsCarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselTests.swift; sourceTree = "<group>"; };
+		416D2CF51E5B079C00D8A570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416D2CFF1E5B081200D8A570 /* SwipingCardsCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		416D2D011E5B081A00D8A570 /* SwipingCardsCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingCardsCarouselFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41141E6B1E5735B900A22F0F /* Frameworks */ = {
+		416D2CE11E5B079C00D8A570 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41141E751E5735B900A22F0F /* Frameworks */ = {
+		416D2CEB1E5B079C00D8A570 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41141E791E5735B900A22F0F /* SwipingCardsCarousel.framework in Frameworks */,
+				416D2CEF1E5B079C00D8A570 /* SwipingCardsCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41141E651E5735B900A22F0F = {
+		416D2CDB1E5B079C00D8A570 = {
 			isa = PBXGroup;
 			children = (
-				41141E711E5735B900A22F0F /* SwipingCardsCarousel */,
-				41141E7C1E5735B900A22F0F /* SwipingCardsCarouselTests */,
-				41141E701E5735B900A22F0F /* Products */,
+				416D2CE71E5B079C00D8A570 /* SwipingCardsCarousel */,
+				416D2CF21E5B079C00D8A570 /* SwipingCardsCarouselTests */,
+				416D2CE61E5B079C00D8A570 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		41141E701E5735B900A22F0F /* Products */ = {
+		416D2CE61E5B079C00D8A570 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41141E6F1E5735B900A22F0F /* SwipingCardsCarousel.framework */,
-				41141E781E5735B900A22F0F /* SwipingCardsCarouselTests.xctest */,
+				416D2CE51E5B079C00D8A570 /* SwipingCardsCarousel.framework */,
+				416D2CEE1E5B079C00D8A570 /* SwipingCardsCarouselTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41141E711E5735B900A22F0F /* SwipingCardsCarousel */ = {
+		416D2CE71E5B079C00D8A570 /* SwipingCardsCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				41141E721E5735B900A22F0F /* SwipingCardsCarousel.h */,
-				41141E731E5735B900A22F0F /* Info.plist */,
-				41141E891E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift */,
-				41A60D491E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift */,
+				416D2CFF1E5B081200D8A570 /* SwipingCardsCarouselCollectionViewCell.swift */,
+				416D2D011E5B081A00D8A570 /* SwipingCardsCarouselFlowLayout.swift */,
+				416D2CE81E5B079C00D8A570 /* SwipingCardsCarousel.h */,
+				416D2CE91E5B079C00D8A570 /* Info.plist */,
 			);
 			path = SwipingCardsCarousel;
 			sourceTree = "<group>";
 		};
-		41141E7C1E5735B900A22F0F /* SwipingCardsCarouselTests */ = {
+		416D2CF21E5B079C00D8A570 /* SwipingCardsCarouselTests */ = {
 			isa = PBXGroup;
 			children = (
-				41141E7D1E5735B900A22F0F /* SwipingCardsCarouselTests.swift */,
-				41141E7F1E5735B900A22F0F /* Info.plist */,
+				416D2CF31E5B079C00D8A570 /* SwipingCardsCarouselTests.swift */,
+				416D2CF51E5B079C00D8A570 /* Info.plist */,
 			);
 			path = SwipingCardsCarouselTests;
 			sourceTree = "<group>";
@@ -95,25 +95,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		41141E6C1E5735B900A22F0F /* Headers */ = {
+		416D2CE21E5B079C00D8A570 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41141E801E5735B900A22F0F /* SwipingCardsCarousel.h in Headers */,
+				416D2CF61E5B079C00D8A570 /* SwipingCardsCarousel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		41141E6E1E5735B900A22F0F /* SwipingCardsCarousel */ = {
+		416D2CE41E5B079C00D8A570 /* SwipingCardsCarousel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41141E831E5735B900A22F0F /* Build configuration list for PBXNativeTarget "SwipingCardsCarousel" */;
+			buildConfigurationList = 416D2CF91E5B079C00D8A570 /* Build configuration list for PBXNativeTarget "SwipingCardsCarousel" */;
 			buildPhases = (
-				41141E6A1E5735B900A22F0F /* Sources */,
-				41141E6B1E5735B900A22F0F /* Frameworks */,
-				41141E6C1E5735B900A22F0F /* Headers */,
-				41141E6D1E5735B900A22F0F /* Resources */,
+				416D2CE01E5B079C00D8A570 /* Sources */,
+				416D2CE11E5B079C00D8A570 /* Frameworks */,
+				416D2CE21E5B079C00D8A570 /* Headers */,
+				416D2CE31E5B079C00D8A570 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -121,75 +121,75 @@
 			);
 			name = SwipingCardsCarousel;
 			productName = SwipingCardsCarousel;
-			productReference = 41141E6F1E5735B900A22F0F /* SwipingCardsCarousel.framework */;
+			productReference = 416D2CE51E5B079C00D8A570 /* SwipingCardsCarousel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		41141E771E5735B900A22F0F /* SwipingCardsCarouselTests */ = {
+		416D2CED1E5B079C00D8A570 /* SwipingCardsCarouselTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41141E861E5735B900A22F0F /* Build configuration list for PBXNativeTarget "SwipingCardsCarouselTests" */;
+			buildConfigurationList = 416D2CFC1E5B079C00D8A570 /* Build configuration list for PBXNativeTarget "SwipingCardsCarouselTests" */;
 			buildPhases = (
-				41141E741E5735B900A22F0F /* Sources */,
-				41141E751E5735B900A22F0F /* Frameworks */,
-				41141E761E5735B900A22F0F /* Resources */,
+				416D2CEA1E5B079C00D8A570 /* Sources */,
+				416D2CEB1E5B079C00D8A570 /* Frameworks */,
+				416D2CEC1E5B079C00D8A570 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41141E7B1E5735B900A22F0F /* PBXTargetDependency */,
+				416D2CF11E5B079C00D8A570 /* PBXTargetDependency */,
 			);
 			name = SwipingCardsCarouselTests;
 			productName = SwipingCardsCarouselTests;
-			productReference = 41141E781E5735B900A22F0F /* SwipingCardsCarouselTests.xctest */;
+			productReference = 416D2CEE1E5B079C00D8A570 /* SwipingCardsCarouselTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		41141E661E5735B900A22F0F /* Project object */ = {
+		416D2CDC1E5B079C00D8A570 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = UXSMobile;
 				TargetAttributes = {
-					41141E6E1E5735B900A22F0F = {
+					416D2CE41E5B079C00D8A570 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					41141E771E5735B900A22F0F = {
+					416D2CED1E5B079C00D8A570 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 41141E691E5735B900A22F0F /* Build configuration list for PBXProject "SwipingCardsCarousel" */;
+			buildConfigurationList = 416D2CDF1E5B079C00D8A570 /* Build configuration list for PBXProject "SwipingCardsCarousel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 41141E651E5735B900A22F0F;
-			productRefGroup = 41141E701E5735B900A22F0F /* Products */;
+			mainGroup = 416D2CDB1E5B079C00D8A570;
+			productRefGroup = 416D2CE61E5B079C00D8A570 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41141E6E1E5735B900A22F0F /* SwipingCardsCarousel */,
-				41141E771E5735B900A22F0F /* SwipingCardsCarouselTests */,
+				416D2CE41E5B079C00D8A570 /* SwipingCardsCarousel */,
+				416D2CED1E5B079C00D8A570 /* SwipingCardsCarouselTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41141E6D1E5735B900A22F0F /* Resources */ = {
+		416D2CE31E5B079C00D8A570 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41141E761E5735B900A22F0F /* Resources */ = {
+		416D2CEC1E5B079C00D8A570 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,35 +199,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41141E6A1E5735B900A22F0F /* Sources */ = {
+		416D2CE01E5B079C00D8A570 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A60D4A1E5AE33E0093018E /* SwipingCardsCarouselCollectionViewCell.swift in Sources */,
-				41141E8A1E57366F00A22F0F /* SwipingCardsCarouselFlowLayout.swift in Sources */,
+				416D2D001E5B081200D8A570 /* SwipingCardsCarouselCollectionViewCell.swift in Sources */,
+				416D2D021E5B081A00D8A570 /* SwipingCardsCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41141E741E5735B900A22F0F /* Sources */ = {
+		416D2CEA1E5B079C00D8A570 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41141E7E1E5735B900A22F0F /* SwipingCardsCarouselTests.swift in Sources */,
+				416D2CF41E5B079C00D8A570 /* SwipingCardsCarouselTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41141E7B1E5735B900A22F0F /* PBXTargetDependency */ = {
+		416D2CF11E5B079C00D8A570 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41141E6E1E5735B900A22F0F /* SwipingCardsCarousel */;
-			targetProxy = 41141E7A1E5735B900A22F0F /* PBXContainerItemProxy */;
+			target = 416D2CE41E5B079C00D8A570 /* SwipingCardsCarousel */;
+			targetProxy = 416D2CF01E5B079C00D8A570 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		41141E811E5735B900A22F0F /* Debug */ = {
+		416D2CF71E5B079C00D8A570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		41141E821E5735B900A22F0F /* Release */ = {
+		416D2CF81E5B079C00D8A570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,7 +326,7 @@
 			};
 			name = Release;
 		};
-		41141E841E5735B900A22F0F /* Debug */ = {
+		416D2CFA1E5B079C00D8A570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -347,7 +347,7 @@
 			};
 			name = Debug;
 		};
-		41141E851E5735B900A22F0F /* Release */ = {
+		416D2CFB1E5B079C00D8A570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -367,7 +367,7 @@
 			};
 			name = Release;
 		};
-		41141E871E5735B900A22F0F /* Debug */ = {
+		416D2CFD1E5B079C00D8A570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -379,7 +379,7 @@
 			};
 			name = Debug;
 		};
-		41141E881E5735B900A22F0F /* Release */ = {
+		416D2CFE1E5B079C00D8A570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -394,34 +394,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41141E691E5735B900A22F0F /* Build configuration list for PBXProject "SwipingCardsCarousel" */ = {
+		416D2CDF1E5B079C00D8A570 /* Build configuration list for PBXProject "SwipingCardsCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41141E811E5735B900A22F0F /* Debug */,
-				41141E821E5735B900A22F0F /* Release */,
+				416D2CF71E5B079C00D8A570 /* Debug */,
+				416D2CF81E5B079C00D8A570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41141E831E5735B900A22F0F /* Build configuration list for PBXNativeTarget "SwipingCardsCarousel" */ = {
+		416D2CF91E5B079C00D8A570 /* Build configuration list for PBXNativeTarget "SwipingCardsCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41141E841E5735B900A22F0F /* Debug */,
-				41141E851E5735B900A22F0F /* Release */,
+				416D2CFA1E5B079C00D8A570 /* Debug */,
+				416D2CFB1E5B079C00D8A570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41141E861E5735B900A22F0F /* Build configuration list for PBXNativeTarget "SwipingCardsCarouselTests" */ = {
+		416D2CFC1E5B079C00D8A570 /* Build configuration list for PBXNativeTarget "SwipingCardsCarouselTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41141E871E5735B900A22F0F /* Debug */,
-				41141E881E5735B900A22F0F /* Release */,
+				416D2CFD1E5B079C00D8A570 /* Debug */,
+				416D2CFE1E5B079C00D8A570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 41141E661E5735B900A22F0F /* Project object */;
+	rootObject = 416D2CDC1E5B079C00D8A570 /* Project object */;
 }
