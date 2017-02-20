@@ -24,11 +24,11 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
   private var dragDistance = CGPoint.zero
   
   fileprivate struct Constants {
-    static let rotationMax: CGFloat = 1.0
+    static let rotationMax: CGFloat = 1.0 // Max card rotation
     static let defaultRotationAngle = CGFloat(M_PI) / 10.0
     static let scaleMin: CGFloat = 0.8
-    static let SwipeDistanceToTakeAction: CGFloat  = UIScreen.main.bounds.size.height / 5
-    static let SwipeAnimationDuration: TimeInterval = 0.30
+    static let SwipeDistanceToTakeAction: CGFloat  = UIScreen.main.bounds.size.height / 5 //Distance required for the cell to go off the screen.
+    static let SwipeAnimationDuration: TimeInterval = 0.30 //Duration of the Animation when Swiping Up/Down.
     static let cardResetAnimationDuration: TimeInterval = 0.2
   }
   
@@ -68,7 +68,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
     
     switch gestureRecognizer.state {
     case .began:
-      originalPoint = self.center
+      originalPoint = self.center //Get the center of the Cell.
       
       let firstTouchPoint = gestureRecognizer.location(in: self)
       let newAnchorPoint = CGPoint(x: firstTouchPoint.x / bounds.width, y: firstTouchPoint.y / bounds.height)
@@ -105,7 +105,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
     }
   }
   
-  private func swipeMadeAction(){
+  func swipeMadeAction(){
     let swipeDistanceOnY = dragDistance.y
     
     if swipeDistanceOnY > Constants.SwipeDistanceToTakeAction {
@@ -119,25 +119,27 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
   
   private func downAction(){
     self.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
-    let maxDownPoint: CGPoint = CGPoint(x: originalPoint.x, y: 2 * frame.maxY)
+    let deleteOnSwipeDown = true
+    let maxDownPoint: CGPoint = deleteOnSwipeDown ? CGPoint(x: originalPoint.x, y: 2 * frame.maxY) : self.originalPoint
     UIView.animate(withDuration: Constants.SwipeAnimationDuration, animations: { () -> Void in
       self.layer.position = maxDownPoint
-      self.superview?.isUserInteractionEnabled = false
+      self.superview?.isUserInteractionEnabled = false //Deactivate the user interaction in the Superview (In this case will be in the collection view). To avoid scrolling during the animation.
     }, completion: { (completion) -> Void in
-      self.superview?.isUserInteractionEnabled = true
-      self.delegate?.cellSwipedDown(self)
+      self.superview?.isUserInteractionEnabled = true // Re-activate the user interaction.
+      self.delegate?.cellSwipedDown(self) //Delegate the SwipeDown action and send the view with it.
     })
   }
   
   private func upAction(){
     self.layer.anchorPoint = CGPoint(x: 0.5, y: 1)
-    let maxUpperPoint: CGPoint = CGPoint(x: originalPoint.x, y: 2 * frame.minY)
+    let deleteOnSwipeUp = true
+    let maxUpperPoint: CGPoint = deleteOnSwipeUp ? CGPoint(x: originalPoint.x, y: 2 * frame.minY) : self.originalPoint
     UIView.animate(withDuration: Constants.SwipeAnimationDuration, animations: { () -> Void in
       self.layer.position = maxUpperPoint
-      self.superview?.isUserInteractionEnabled = false
+      self.superview?.isUserInteractionEnabled = false //Deactivate the user interaction in the Superview (In this case will be in the collection view). To avoid scrolling during the animation.
     }, completion: { (completion) -> Void in
-      self.superview?.isUserInteractionEnabled = true
-      self.delegate?.cellSwipedUp(self)
+      self.superview?.isUserInteractionEnabled = true // Re-activate the user interaction.
+      self.delegate?.cellSwipedUp(self) //Delegate the SwipeUp action and send the view with it.
     })
   }
   
@@ -156,4 +158,13 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
     self.layer.transform = CATransform3DIdentity
     self.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
   }
+}
+
+
+private extension CGPoint {
+  // Get the length (a.k.a. magnitude) of the vector
+  var length: CGFloat { return sqrt(self.x * self.x + self.y * self.y) }
+  
+  // Normalize the vector (preserve its direction, but change its magnitude to 1)
+  var normalized: CGPoint { return CGPoint(x: self.x / self.length, y: self.y / self.length) }
 }
