@@ -9,8 +9,6 @@
 import UIKit
 
 public protocol SwipingCardsCarouselFlowLayoutStyle{
-  var itemWidth:CGFloat {get}
-  var itemHeight: CGFloat {get}
   var minLineSpacing: CGFloat {get}
   var topSectionInset: CGFloat? {get}
   var bottomSectionInset: CGFloat? {get}
@@ -57,7 +55,6 @@ public class SwipingCardsCarouselFlowLayout:  UICollectionViewFlowLayout {
     
     let stylingDelegate = self.stylingDelegate ?? DefaultSwipingCardsCarouselStyle()
     
-    itemSize = CGSize(width: stylingDelegate.itemWidth, height: stylingDelegate.itemHeight)
     scrollDirection = .horizontal
     minimumLineSpacing = stylingDelegate.minLineSpacing
     if let collectionView = collectionView, collectionView.frame.height < UIScreen.main.bounds.height{
