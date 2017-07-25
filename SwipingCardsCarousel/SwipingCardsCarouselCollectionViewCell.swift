@@ -12,6 +12,7 @@ import UIKit
 public protocol SwipingCardsCarouselDelegate : class {
   func cellSwipedUp(_ cell: UICollectionViewCell)
   func cellSwipedDown(_ cell: UICollectionViewCell)
+  func shouldSwipe(_ cell: UICollectionViewCell) -> Bool
 }
 
 open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGestureRecognizerDelegate {
@@ -54,6 +55,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
   
   open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
     guard let gestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer else {return false}
+    guard delegate?.shouldSwipe(self) ?? true else {return false}
     let translation = gestureRecognizer.translation(in: self)
     return abs(translation.x) < abs(translation.y)
   }
