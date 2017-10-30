@@ -28,7 +28,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
     static let rotationMax: CGFloat = 1.0
     static let defaultRotationAngle = CGFloat(M_PI) / 10.0
     static let scaleMin: CGFloat = 0.8
-    static let SwipeDistanceToTakeAction: CGFloat  = UIScreen.main.bounds.size.height / 10
+    static let SwipeDistanceToTakeAction: CGFloat  = UIScreen.main.bounds.size.height / 20
     static let SwipeAnimationDuration: TimeInterval = 0.30
     static let cardResetAnimationDuration: TimeInterval = 0.2
   }
@@ -132,6 +132,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
   }
   
   private func upAction(){
+    print("swiping up")
     self.layer.anchorPoint = CGPoint(x: 0.5, y: 1)
     let maxUpperPoint: CGPoint = CGPoint(x: originalPoint.x, y: 2 * frame.minY)
     UIView.animate(withDuration: Constants.SwipeAnimationDuration, animations: { () -> Void in
