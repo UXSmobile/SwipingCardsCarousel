@@ -111,6 +111,7 @@ open class SwipingCardsCarouselCollectionViewCell:UICollectionViewCell,UIGesture
     let swipeDistanceOnY = dragDistance.y
     print("swipeDistanceOnY")
     print(swipeDistanceOnY)
+    print(Constants.SwipeDistanceToTakeAction)
     if swipeDistanceOnY > Constants.SwipeDistanceToTakeAction {
       downAction()
     } else if swipeDistanceOnY < -Constants.SwipeDistanceToTakeAction {
